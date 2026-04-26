@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exact Dashboard UI</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{display:flex;background:#f5f7fb}
+
+/* SIDEBAR */
+.sidebar{
+  width:260px;
+  height:100vh;
+  background:#0b0f2f;
+  color:#fff;
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.logo{font-size:22px;font-weight:600;margin-bottom:30px}
+.menu li{
+  list-style:none;
+  padding:14px;
+  margin:10px 0;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  cursor:pointer;
+  opacity:0.8;
+}
+.menu li.active{
+  background:linear-gradient(135deg,#6c63ff,#7d5fff);
+  opacity:1;
+}
+.menu li:hover{opacity:1}
+
+.upgrade{
+  background:linear-gradient(135deg,#1c2147,#2a2f5f);
+  padding:18px;
+  border-radius:14px;
+  text-align:center;
+}
+.upgrade button{
+  margin-top:10px;
+  padding:10px;
+  border:none;
+  width:100%;
+  background:#6c63ff;
+  color:#fff;
+  border-radius:10px;
+}
+
+/* MAIN */
+.main{flex:1;padding:25px}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+}
+.header h2{font-weight:600}
+.header p{font-size:14px;color:#777}
+.header-right{display:flex;align-items:center;gap:20px}
+.profile{width:45px;height:45px;border-radius:50%;background:url('https://i.pravatar.cc/45') center/cover}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:20px;
+}
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:18px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* TASKS */
+.tabs{display:flex;gap:10px;margin:10px 0}
+.tab{
+  padding:6px 12px;
+  border-radius:10px;
+  background:#eee;
+  font-size:12px;
+}
+.tab.active{background:#000;color:#fff}
+.task{margin:15px 0}
+.task small{color:#888}
+.progress{height:6px;background:#eee;border-radius:10px;margin-top:5px}
+.progress div{height:100%;background:#6c63ff;border-radius:10px}
+
+/* NOTES */
+.note{
+  padding:18px;
+  border-radius:16px;
+  color:#fff;
+  margin-bottom:15px;
+}
+.green{background:linear-gradient(135deg,#43e97b,#38f9d7)}
+.purple{background:linear-gradient(135deg,#a18cd1,#fbc2eb)}
+
+/* SCHEDULE */
+.schedule{grid-column:span 2}
+.row{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+  align-items:center;
+}
+.teacher{display:flex;align-items:center;gap:10px}
+.avatar{width:30px;height:30px;border-radius:50%;background:url('https://i.pravatar.cc/30') center/cover}
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div>
+    <div class="logo">🎓 SKILL BRIDGE</div>
+    <ul class="menu">
+      <li class="active"><i class="fa fa-home"></i> Dashboard</li>
+      <li><i class="fa fa-book"></i> My Courses</li>
+      <li><i class="fa fa-file"></i> Test Series</li>
+      <li><i class="fa fa-user"></i> Mock Interview</li>
+      <li><i class="fa fa-comments"></i> Counseling</li>
+      <li><i class="fa fa-road"></i> Roadmap</li>
+    </ul>
+  </div>
+
+  <div class="upgrade">
+    <p>Unlock unlimited tests & courses</p>
+    <button>Upgrade Now</button>
+  </div>
+</div>
+
+<div class="main">
+
+<div class="header">
+  <div>
+    <h2>Hello, Anjali! 👋</h2>
+    <p>Keep learning, keep growing!</p>
+  </div>
+  <div class="header-right">
+    <i class="fa fa-bell"></i>
+    <div class="profile"></div>
+  </div>
+</div>
+
+<div class="grid">
+
+<div class="card">
+  <h3>My tasks</h3>
+  <div class="tabs">
+    <div class="tab active">All</div>
+    <div class="tab">In progress</div>
+    <div class="tab">Done</div>
+  </div>
+
+  <div class="task">
+    <b>Read poem & answer questions</b><br>
+    <small>English Literature</small>
+    <div class="progress"><div style="width:30%"></div></div>
+  </div>
+
+  <div class="task">
+    <b>Create a comic strip</b><br>
+    <small>Social Studies</small>
+    <div class="progress"><div style="width:70%"></div></div>
+  </div>
+
+  <div class="task">
+    <b>Prepare for math test</b><br>
+    <small>Math</small>
+    <div class="progress"><div style="width:60%"></div></div>
+  </div>
+
+</div>
+
+<div class="card">
+  <h3>My notes</h3>
+  <div class="note green">Math concept explanation notes</div>
+  <div class="note purple">Biology concept explanation notes</div>
+</div>
+
+<div class="card schedule">
+  <h3>My schedule</h3>
+
+  <div class="row">
+    <div>8:30 AM</div>
+    <div>Math</div>
+    <div class="teacher"><div class="avatar"></div>Mrs. Goodman</div>
+    <div>B3, Room 124</div>
+  </div>
+
+  <div class="row">
+    <div>10:30 AM</div>
+    <div>ELA</div>
+    <div class="teacher"><div class="avatar"></div>Ms. Milton</div>
+    <div>B2, Room 158</div>
+  </div>
+
+  <div class="row">
+    <div>12:00 PM</div>
+    <div>Biology</div>
+    <div class="teacher"><div class="avatar"></div>Mr. Hodge</div>
+    <div>B3, Room 310</div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
