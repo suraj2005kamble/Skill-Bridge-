@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Career Landing</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0b0f2f;color:#fff}
+
+.container{padding:40px}
+
+/* HEADER */
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px}
+.logo{font-weight:600;font-size:20px}
+.logo span{color:#8b7bff}
+
+/* HERO */
+.hero{display:flex;align-items:center;justify-content:space-between}
+.hero-text{max-width:600px}
+.hero h1{font-size:60px;line-height:1.2}
+.hero h1 span{color:#8b7bff}
+.hero p{margin:20px 0;color:#ccc}
+
+.buttons{display:flex;gap:15px;margin-top:20px}
+.btn{
+  padding:12px 22px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  font-weight:500;
+}
+.primary{background:linear-gradient(135deg,#6c63ff,#8b7bff);color:#fff}
+.secondary{background:transparent;border:1px solid #777;color:#fff}
+
+/* STATS */
+.stats{display:flex;gap:40px;margin-top:30px}
+.stat{display:flex;align-items:center;gap:10px}
+.circle{
+  width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center
+}
+.purple{background:#6c63ff}
+.blue{background:#3498db}
+.green{background:#2ecc71}
+.orange{background:#e67e22}
+
+/* IMAGE */
+.hero-img img{width:400px}
+
+/* FEATURES */
+.features{
+  background:#fff;
+  color:#000;
+  border-radius:30px 30px 0 0;
+  margin-top:60px;
+  padding:40px;
+  text-align:center;
+}
+.features h2{margin-bottom:30px}
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
+}
+.feature{
+  padding:20px;
+}
+.icon{
+  width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;margin-bottom:10px
+}
+.bg1{background:#ede7ff}
+.bg2{background:#e3f2fd}
+.bg3{background:#e8f5e9}
+.bg4{background:#fff3e0}
+.bg5{background:#fce4ec}
+
+</style>
 </head>
 <body>
-    
+
+<div class="container">
+
+<div class="header">
+  <div class="logo">🎓 SKILL <span>BRIDGE</span></div>
+</div>
+
+<div class="hero">
+
+<div class="hero-text">
+  <h1>Build Your <br><span>Career</span> with AI</h1>
+  <p>Learn new skills, practice with experts and get placed in your dream company.</p>
+
+  <div class="buttons">
+    <button class="btn primary">Get Started →</button>
+    <button class="btn secondary">Explore Courses →</button>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="circle purple"><i class="fa fa-users"></i></div>10K+ Students</div>
+    <div class="stat"><div class="circle blue"><i class="fa fa-book"></i></div>200+ Courses</div>
+    <div class="stat"><div class="circle green"><i class="fa fa-building"></i></div>500+ Recruiters</div>
+    <div class="stat"><div class="circle orange"><i class="fa fa-chart-line"></i></div>95% Placement</div>
+  </div>
+</div>
+
+<div class="hero-img">
+  <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
+</div>
+
+</div>
+
+</div>
+
+<div class="features">
+  <h2>Our Features</h2>
+
+  <div class="feature-grid">
+
+    <div class="feature">
+      <div class="icon bg1"><i class="fa fa-user"></i></div>
+      <h4>Career Counseling</h4>
+      <p>Expert guidance</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon bg2"><i class="fa fa-road"></i></div>
+      <h4>Course Roadmap</h4>
+      <p>Structured learning</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon bg3"><i class="fa fa-file"></i></div>
+      <h4>Test Series</h4>
+      <p>Practice tests</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon bg4"><i class="fa fa-comments"></i></div>
+      <h4>Mock Interview</h4>
+      <p>AI interview</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon bg5"><i class="fa fa-briefcase"></i></div>
+      <h4>Placement Support</h4>
+      <p>Get hired</p>
+    </div>
+
+  </div>
+</div>
+
 </body>
 </html>
